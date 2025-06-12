@@ -1,19 +1,24 @@
-import { Box, Button, Text } from "@chakra-ui/react";
+import { useState } from "react";
+import { Box } from "@chakra-ui/react";
+import Menu from "../../components/menu"
+import Labels from "./labels"
+import { ModalType } from "../../types/menu.types";
 
 function Home() {
+    const [modalType, setModalType] = useState<ModalType | null>(null);
+
+
 
     return (
         <Box __css={{
             width: '100vw',
             height: '100vh',
             display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
+            flexDirection: 'column',            
             backgroundColor: '#333333'
-        }}>
-            <Text fontSize='2xl' fontWeight='bold'>Home</Text>
-            <Button>Sair</Button>
+        }}>       
+            <Menu onOpenModal={setModalType}/>  
+            {modalType === ModalType.LABEL && <Labels/>}   
         </Box>
     )
 }
