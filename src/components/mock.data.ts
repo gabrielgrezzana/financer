@@ -1,4 +1,15 @@
-const data = [
+export const financialData = [
+  { mes: 'Jan', valorGuardado: 1500, meta: 2000 },
+  { mes: 'Feb', valorGuardado: 1800, meta: 2200 },
+  { mes: 'Mar', valorGuardado: 2200, meta: 2500 },
+  { mes: 'Apr', valorGuardado: 2500, meta: 2800 },
+  { mes: 'May', valorGuardado: 2800, meta: 3100 },
+  { mes: 'Jun', valorGuardado: 3100, meta: 3400 },
+  { mes: 'Jul', valorGuardado: 3400, meta: 3700 },
+  { mes: 'Aug', valorGuardado: 3700, meta: 4000 },
+];
+
+export const data_chart = [
     {
       name: 'Page A',
       uv: 4000,
@@ -43,4 +54,4 @@ const data = [
     },
   ];
 
-  export default data;
+  

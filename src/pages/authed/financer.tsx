@@ -1,5 +1,6 @@
 import { Box, Text } from "@chakra-ui/react";
 import Balance from "../../components/balance";
+import Analytics from "../../components/analytics";
 
 
 
@@ -49,6 +50,7 @@ function Financer() {
                     borderColor: 'purple',
                 }}>
                     <Text fontSize='2xl' fontWeight='bold' color={'#fff'} textAlign={'center'}>Analytics</Text>
+                    <Analytics />
                 </Box>
             </Box>
         </Box>

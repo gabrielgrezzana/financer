@@ -6,6 +6,7 @@ import { selectActiveModal, closeModal } from '../redux/modalSlice';
 import { ModalType } from '../types/menu.types';
 
 import Financer from '../pages/authed/financer';
+import Metamask from '../pages/authed/metamask';
 import Labels from '../pages/authed/labels';
 
 const ModalManager: React.FC = () => {
@@ -22,6 +23,8 @@ const ModalManager: React.FC = () => {
         return <Financer />;
       case ModalType.LABEL:
         return <Labels />;
+      case ModalType.METAMASK:
+        return <Metamask />;
       default:
         return null;
     }
